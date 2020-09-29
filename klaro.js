@@ -3183,8 +3183,8 @@
     }
     , function(e, t) {
         e.exports = {
-            acceptAll: "Accept all",
-            acceptSelected: "Accept selected",
+            acceptAll: Cookies.get('country') == 'de' ? "Alle akzeptieren" : "Accept all",
+            acceptSelected: Cookies.get('country') == 'de' ? "Auswahl akzeptieren" : "Accept selected",
             app: {
                 disableAll: {
                     description: "Use this switch to enable or disable all services.",
@@ -3203,28 +3203,29 @@
             },
             close: "Close",
             consentModal: {
-                description: "Here you can assess and customize the services that we'd like to use on this website. You're in charge! Enable or disable services as you see fit.",
+                description: Cookies.get('country') == 'de' ? "Hier können Sie die Dienste, die wir auf dieser Website nutzen, anpassen. Aktivieren oder deaktivieren Sie die Dienste gemäß Ihrer persönlichen Datenschutzrichtlinien." : "Here you can assess and customize the services that we'd like to use on this website. You're in charge! Enable or disable services as you see fit.",
                 privacyPolicy: {
                     name: "privacy policy",
                     text: "To learn more, please read our {privacyPolicy}."
                 },
-                title: "Services we would like to use"
+                title: Cookies.get('country') == 'de' ? "Cookie Einstellungen" : "Services we would like to use"
             },
             consentNotice: {
                 changeDescription: "There were changes since your last visit, please renew your consent.",
                 configure: "configure",
-                description: "We use website cookies to enhance course content and analyze usage and traffic. Click "Accept" to agree, or "Cookie Settings" to personalize your experience.",
+                description: Cookies.get('country') == 'de' ? "Wir verwenden Cookies, um unsere Kursinhalte zu verbessern und die Webseitennutzung zu analysieren. Klicken Sie auf "Akzeptieren", um zuzustimmen, oder auf "Cookie Einstellungen", um die Nutzung von Cookies zu personalisieren." : "We use website cookies to enhance course content and analyze usage and traffic. Click "
+                " to agree, or "Cookie Settings" to personalize your experience.",
                 imprint: {
                     name: "imprint"
                 },
-                learnMore: "Cookie settings",
+                learnMore: Cookies.get('country') == 'de' ? "Cookie Einstellungen" : "Cookie settings",
                 privacyPolicy: {
                     name: "privacy policy"
                 },
                 testing: "Testing mode!"
             },
             decline: "I decline",
-            ok: "Accept",
+            ok: Cookies.get('country') == 'de' ? "Akzeptieren" : "Accept",
             poweredBy: "Realized with Klaro!",
             purposeItem: {
                 app: "service",
@@ -3236,8 +3237,8 @@
                     title: "Advertisements"
                 },
                 functional: {
-                    description: "These services are essential for the correct functioning of this website. You cannot disable them here as the service would not work correctly otherwise.\n",
-                    title: "Service Provision"
+                    description: Cookies.get('country') == 'de' ? "Diese Dienste sind für die korrekte Funktionalität der Webseite unerlässlich. Sie können diese nicht deaktivieren, da die ordnungsgemäße Funktionsweise der Webseite andernfalls nicht gewährleistet werden kann.\n" : "These services are essential for the correct functioning of this website. You cannot disable them here as the service would not work correctly otherwise.\n",
+                    title: Cookies.get('country') == 'de' ? "Dienstbereitstellung" : "Service Provision"
                 },
                 marketing: {
                     description: "These services process personal information to show you relevant content about products, services or topics that you might be interested in.",
@@ -3248,8 +3249,8 @@
                     title: "Performance Optimization"
                 },
                 analytical: {
-                    description: "These services gather statistics that help us to make our website even better and analyse our traffic.",
-                    title: "Analytical cookies"
+                    description: Cookies.get('country') == 'de' ? "Diese Dienste sammeln Statistiken, die uns helfen, unsere Website noch besser zu machen und unseren Traffic zu analysieren." : "These services gather statistics that help us to make our website even better and analyse our traffic.",
+                    title: Cookies.get('country') == 'de' ? "Analytische Cookies" : "Analytical cookies"
                 }
             },
             save: "Save"
