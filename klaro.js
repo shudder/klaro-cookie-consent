@@ -6432,7 +6432,7 @@
                     )).length > 1 && l;
                     return se("ul", {
                         className: "cm-apps"
-                    }, c, s.length > 1 && se("li", {
+                    }, c, s.length > 10 && se("li", {
                         className: "cm-app cm-toggle-all"
                     }, se(we, {
                         name: "disableAll",
@@ -6891,7 +6891,7 @@
                       , h = m(a);
                     return se("ul", {
                         className: "cm-purposes"
-                    }, v, y.length > 1 && se("li", {
+                    }, v, y.length > 10 && se("li", {
                         className: "cm-purpose cm-toggle-all"
                     }, se(Le, {
                         name: "disableAll",
@@ -7356,6 +7356,8 @@
                 )),
                 xt(_t(t), "saveAndHide", (function() {
                     t.executeButtonClicked(!1, !1, "save")
+                    console.log('accepted')
+                    document.getElementById("overlay").style.display = "none";
                 }
                 )),
                 xt(_t(t), "acceptAndHide", (function() {
