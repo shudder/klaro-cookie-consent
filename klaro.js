@@ -3213,8 +3213,7 @@
             consentNotice: {
                 changeDescription: "There were changes since your last visit, please renew your consent.",
                 configure: "configure",
-                description: Cookies.get('country') == 'de' ? "Wir verwenden Cookies, um unsere Kursinhalte zu verbessern und die Webseitennutzung zu analysieren. Klicken Sie auf "Akzeptieren", um zuzustimmen, oder auf "Cookie Einstellungen", um die Nutzung von Cookies zu personalisieren." : "We use website cookies to enhance course content and analyze usage and traffic. Click "
-                " to agree, or "Cookie Settings" to personalize your experience.",
+                description: Cookies.get('country') == 'de' ? "Wir verwenden Cookies, um unsere Kursinhalte zu verbessern und die Webseitennutzung zu analysieren. Klicken Sie auf 'Akzeptieren', um zuzustimmen, oder auf 'Cookie Einstellungen', um die Nutzung von Cookies zu personalisieren." : "We use website cookies to enhance course content and analyze usage and traffic. Click 'Accept' to agree, or 'Cookie Settings' to personalize your experience.",
                 imprint: {
                     name: "imprint"
                 },
