@@ -7,7 +7,7 @@ var klaroConfig = {
     privacyPolicy: '/p/privacy',
     default: true,
     mustConsent: false,
-    acceptAll: true,
+    acceptAll: false,
     hideDeclineAll: true,
     hideLearnMore: false,
     apps: [
@@ -22,6 +22,13 @@ var klaroConfig = {
             name: 'Analytical',
             title: 'Analytical',
             purposes: ['analytical'],
+            default: true,
+            required: false
+        },
+        {
+            name: 'Marketing',
+            title: 'Marketing',
+            purposes: ['marketing'],
             default: true,
             required: false
         },
