@@ -3187,8 +3187,8 @@
             acceptSelected: Cookies.get('country') == 'de' ? "Auswahl akzeptieren" : "Accept selected",
             app: {
                 disableAll: {
-                    description: "Use this switch to enable or disable all services.",
-                    title: "Enable or disable all services"
+                    description: Cookies.get('country') == 'de' ? "Benutzen Sie diese Funktion, um alle Dienste zu aktiveren oder zu deaktivieren." : "Use this switch to enable or disable all services.",
+                    title: Cookies.get('country') == 'de' ? "Alle Dienste aktivieren/deaktivieren" : "Enable or disable all services"
                 },
                 optOut: {
                     description: "This services is loaded by default (but you can opt out)",
@@ -3197,16 +3197,16 @@
                 purpose: "purpose",
                 purposes: "purposes",
                 required: {
-                    description: "This services is always required",
-                    title: "(always required)"
+                    description: Cookies.get('country') == 'de' ? "Dieser Dienst ist erforderlich" : "This services is always required",
+                    title: Cookies.get('country') == 'de' ? "(erforderlich)" : "(always required)"
                 }
             },
             close: "Close",
             consentModal: {
                 description: Cookies.get('country') == 'de' ? "Hier können Sie die Dienste, die wir auf dieser Website nutzen, anpassen. Aktivieren oder deaktivieren Sie die Dienste gemäß Ihrer persönlichen Datenschutzrichtlinien." : "Here you can assess and customize the services that we'd like to use on this website. You're in charge! Enable or disable services as you see fit.",
                 privacyPolicy: {
-                    name: "privacy policy",
-                    text: "To learn more, please read our {privacyPolicy}."
+                    name: Cookies.get('country') == 'de' ? "Datenschutzerklärung" : "privacy policy",
+                    text: Cookies.get('country') == 'de' ? "Um mehr zu erfahren, lesen Sie bitte unsere {privacyPolicy}." : "To learn more, please read our {privacyPolicy}."
                 },
                 title: Cookies.get('country') == 'de' ? "Cookie Einstellungen" : "Services we would like to use"
             },
@@ -3219,7 +3219,7 @@
                 },
                 learnMore: Cookies.get('country') == 'de' ? "Cookie Einstellungen" : "Cookie settings",
                 privacyPolicy: {
-                    name: "privacy policy"
+                    name: Cookies.get('country') == 'de' ? "Datenschutzerklärung" : "privacy policy"
                 },
                 testing: "Testing mode!"
             },
@@ -3237,11 +3237,11 @@
                 },
                 functional: {
                     description: Cookies.get('country') == 'de' ? "Diese Dienste sind für die korrekte Funktionalität der Webseite unerlässlich. Sie können diese nicht deaktivieren, da die ordnungsgemäße Funktionsweise der Webseite andernfalls nicht gewährleistet werden kann.\n" : "These services are essential for the correct functioning of this website. You cannot disable them here as the service would not work correctly otherwise.\n",
-                    title: Cookies.get('country') == 'de' ? "Dienstbereitstellung" : "Service Provision"
+                    title: Cookies.get('country') == 'de' ? "Technisch notwendige Cookies" : "Service Provision"
                 },
                 marketing: {
-                    description: "These services process personal information to show you relevant content about products, services or topics that you might be interested in.",
-                    title: "Marketing"
+                    description: Cookies.get('country') == 'de' ? "Diese Dienste verarbeiten persönliche Informationen, um Ihnen relevante Inhalte über Produkte, Dienstleistungen oder Themen zu zeigen, die Sie interessieren könnten." : "These services process personal information to show you relevant content about products, services or topics that you might be interested in.",
+                    title: Cookies.get('country') == 'de' ? "Marketing Cookies" : "Marketing cookies"
                 },
                 performance: {
                     description: "These services process personal information to optimize the service that this website offers.\n",
