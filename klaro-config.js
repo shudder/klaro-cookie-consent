@@ -8,8 +8,8 @@ var klaroConfig = {
     default: true,
     mustConsent: false,
     acceptAll: false,
-    hideDeclineAll: true,
-    hideLearnMore: false,
+    hideDeclineAll: false,
+    hideLearnMore: true,
     apps: [
         {
             name: 'Necessary cookies',

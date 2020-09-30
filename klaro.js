@@ -3223,7 +3223,7 @@
                 },
                 testing: "Testing mode!"
             },
-            decline: "I decline",
+            decline: Cookies.get('country') == 'de' ? "Cookie Einstellungen" : "Cookie settings",
             ok: Cookies.get('country') == 'de' ? "Akzeptieren" : "Accept",
             poweredBy: "Realized with Klaro!",
             purposeItem: {
@@ -7133,6 +7133,7 @@
                     l.hideDeclineAll || u.confirmed || (t = se("button", {
                         disabled: i,
                         className: "cm-btn cm-btn-decline cm-btn-danger cn-decline",
+                        style: "display: none;",
                         type: "button",
                         onClick: s
                     }, p(["decline"])));
@@ -7428,7 +7429,8 @@
                     var b, k = (!n.mustConsent || p) && !r.confirmed && !n.noNotice, _ = n.hideDeclineAll ? "" : se("button", {
                         className: "cm-btn cm-btn-danger cn-decline",
                         type: "button",
-                        onClick: this.declineAndHide
+                        //onClick: this.declineAndHide
+                        onClick: g
                     }, a(["decline"])), w = n.acceptAll ? se("button", {
                         className: "cm-btn cm-btn-success",
                         type: "button",
@@ -7482,7 +7484,7 @@
                         })
                     }), i && se("p", null, a(["consentNotice", "testing"])), h, se("div", {
                         className: "cn-ok"
-                    }, !f && x("..."), se("div", {
+                    }, !f && x(), se("div", {
                         className: "cn-buttons"
                     }, _, w))));
                     return p ? se("div", {
