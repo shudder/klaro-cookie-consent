@@ -7423,7 +7423,7 @@
                     };
                     if (r.changed && (h = se("p", {
                         className: "cn-changes"
-                    }, a(["consentNotice", "changeDescription"]))),
+                    }, a(["consentNotice", "changeDescriptionHide"]))),
                     !o && !i)
                         return se("div", null);
                     var b, k = (!n.mustConsent || p) && !r.confirmed && !n.noNotice, _ = n.hideDeclineAll ? "" : se("button", {
