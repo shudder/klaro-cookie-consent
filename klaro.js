@@ -7421,9 +7421,9 @@
                             modal: !0
                         })
                     };
-                    if (r.changed && (h = se("p", {
+                    if (h = se("p", {
                         className: "cn-changes"
-                    }, a(["consentNotice", "changeDescriptionHide"]))),
+                    }, a(["consentNotice", "changeDescriptionHide"])),
                     !o && !i)
                         return se("div", null);
                     var b, k = (!n.mustConsent || p) && !r.confirmed && !n.noNotice, _ = n.hideDeclineAll ? "" : se("button", {
@@ -8047,7 +8047,7 @@
                 this.auxiliaryStore = void 0 !== o ? o : new Zt(this),
                 this.consents = this.defaultConsents,
                 this.confirmed = !1,
-                this.changed = 0,
+                this.changed = !1,
                 this.states = {},
                 this.executedOnce = {},
                 this.watchers = new Set([]),
