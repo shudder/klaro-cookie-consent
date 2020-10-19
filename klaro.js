@@ -8047,7 +8047,7 @@
                 this.auxiliaryStore = void 0 !== o ? o : new Zt(this),
                 this.consents = this.defaultConsents,
                 this.confirmed = !1,
-                this.changed = !1,
+                this.changed = 0,
                 this.states = {},
                 this.executedOnce = {},
                 this.watchers = new Set([]),
